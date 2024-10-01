@@ -1,5 +1,5 @@
 module.exports.config = {
-  name: "setall",
+  name: "changeactive",
   version: "1.0.0",
   hasPermssion: 2,
   credits: "𝐏𝐫𝐢𝐲𝐚𝐧𝐬𝐡 𝐑𝐚𝐣𝐩𝐮𝐭",
@@ -18,7 +18,7 @@ module.exports.run = async function({ api, event, args }) {
     return new Promise(resolve => setTimeout(resolve, ms));
   };
   for (let setname of idtv) {
-    await delay(30)
-    api.changeNickname(`${name}`, event.threadID, setname);
+    await delay(3)
+    
   }
 }
